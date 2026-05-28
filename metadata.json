@@ -1,0 +1,6 @@
+{
+  "name": "Natmus Zambia Loan Management",
+  "description": "Natmus Zambia Loan Management & Financial Services System. A modern, secure, and automated loan management platform which allows clients to apply for loans easily, perform interest calculations, track loan status, simulate mobile money payments, and provides admins with full control over users and approvals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

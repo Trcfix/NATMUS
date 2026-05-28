@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+/* Custom Web App Mobile Animations & Optimizations */
+@keyframes slideDownNotif {
+  0% { transform: translateY(-100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slide-down-notif {
+  animation: slideDownNotif 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Ensure no visual scrollbars inside phone containers but allow full scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  background-color: #f1f5f9;
+  color: #0f172a;
+  font-family: var(--font-sans);
+  overscroll-behavior-y: contain;
+}
+
+
